@@ -1,0 +1,412 @@
+body,
+a,
+div,
+h1,
+p,
+li,
+ol,
+ul,
+img,
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+}
+
+html {
+  color: white;
+  background-color: #202324;
+}
+
+* {
+  scrollbar-color: #454a4d #202324;
+}
+
+
+@media (max-width: 480px) {
+  .navList_point {
+    display: none;
+  }
+}
+
+/*Верхнее меню*/
+
+.head_header {
+  background-color: rgb(17, 14, 20);
+  display: flex;
+  align-items: center;
+  height: 65px;
+  margin-inline: 0;
+  margin: 0px;
+  padding: 0px, 30px;
+  top: 0;
+  
+  position: sticky;
+  box-shadow: 0 2px 7px rgb(0, 0, 0);
+}
+
+.header_wordmenu {
+  margin-left: auto;
+  
+}
+
+.header_logoLink_a {
+  display: flex;
+  align-items: center;
+}
+
+.header_logo {
+  margin: 0, 16px;
+  padding: 0;
+  background-size: 0;
+  display: flex;
+  align-items: center;
+}
+
+.icon-img {
+  margin-left: 16px;
+  padding: 0;
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  
+}
+
+.header_logo_text {
+  margin-left: 5px;
+  font-family: 'Russo One', sans-serif;
+  font-size: 21px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+  border-radius: 5%;
+  border-style:double;
+}
+
+/*Навигационная панель*/
+
+.navList {
+  display: flex;
+  margin: 0, 200px, 0;
+  padding: 0, 200px, 0;
+  list-style: none;
+}
+
+.navList_point {
+  padding: 0 16px;
+  margin: 0 8px;
+  margin-left: 0,30px;
+
+}
+
+.navList_hyperLink {
+  color: rgb(255, 255, 255);
+  display: flex;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 3px 0px;
+  border-bottom: 2px solid rgb(209, 85, 188, 0.4);
+  border-radius: 5%;
+}
+
+.navList_hyperLink:hover {
+  color: rgb(255, 255, 255, 0.85)
+}
+
+.dropdown {
+  display: none;
+}
+
+.nav_menu_button {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navList_point {
+    display: none;
+  }
+
+  .nav_menu_button {
+    height: 30px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: rgb(133, 55, 120, 0%);
+    border: 0px solid rgb(209, 85, 188, 0.4);
+    border-radius: 0px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .bx {
+    font-size: 1.1rem;
+  }
+
+  .dropdown {
+    display: block;
+    position: absolute;
+    border: 1px solid rgb(170, 62, 152);
+    border-radius: 10px;
+    padding: 7px;
+    background: linear-gradient(rgb(27, 23, 31), rgb(36, 28, 46));
+    list-style: none;
+    margin-top: 4px;
+    right: 20px;
+    visibility: hidden;
+    opacity: 0;
+    width: 100px;
+
+    transform: translateY(0.5rem);
+    transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+  }
+
+  .dropdown li:first-of-type {
+    margin-bottom: 10px;
+  }
+
+  .dropdown_menu {
+    color: white;
+    text-decoration: none;
+  }
+
+  .dropdown_menu:hover {
+    color: rgb(255, 255, 255, 0.85)
+  }
+
+  .show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0rem)
+  }
+
+  .arrow {
+    transform: rotate(180deg);
+    transition: 0.2s ease;
+  }
+}
+
+
+/*Основная страница*/
+
+.header_homepage {
+  background: linear-gradient(rgb(27, 23, 31), rgb(36, 28, 46)); 
+}
+
+.bigIconGeneral {
+  padding-top: 50px;
+}
+
+.imgGeneralIcon {
+  height: 230px;
+  border-radius: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.418);
+  box-shadow: 0 1px 10px rgb(170, 62, 152);
+}
+
+.generalText {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 150px;
+}
+
+.topGeneralText {
+  font-size: 40px;
+}
+
+.inviteButton {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.buttonsettingLink {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  display: inline-block;
+}
+
+.inviteButton_link {
+  font-size: 27px;
+  font-weight: 500;
+  font-family: 'Russo One', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  border-radius: 33px;
+  padding: 15px 25px;
+  color: rgb(240, 238, 241);
+  background-color: rgb(170, 62, 152);
+  border: 2px solid rgb(170, 62, 152);
+}
+
+.inviteButton_link:hover {
+  background-color: rgb(170, 62, 152, 80%);
+  border: 2px solid rgb(170, 62, 152, 80%);
+}
+/*-----------gif--------------*/
+
+.gif_block {
+  display: flex;
+  list-style: none;
+  padding: 100px 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: 'Rubik' sans-serif;
+  font-weight: 600;
+}
+
+.gif_command {
+  border: 2px solid rgb(170, 62, 152);
+  border-radius: 20px;
+  box-shadow: 0px 7px 20px rgb(0, 0, 0);
+}
+
+.gif_center {
+  border-top: 4px solid rgb(170, 62, 152);
+  border-bottom: 4px solid rgb(170, 62, 152);
+}
+
+.gif_info {
+  margin-right: 100px;
+}
+
+.gif_text_info {
+  width: 600px;
+  border-right: 7px solid rgb(170, 62, 152);
+  border-style:groove;
+  border-radius: 4px;
+  padding: 10px 0px;
+  text-align: left;
+}
+
+.gif_casino {
+  margin-left: 100px;
+}
+
+.gif_text_casino {
+  width: 596px;
+  border-left: 7px solid rgb(170, 62, 152);
+  border-style:groove;
+  border-radius: 4px;
+  padding: 10px 0px;
+  padding-left: 25px;
+  text-align: left;
+}
+
+.gif_shop {
+  margin-right: 100px;
+}
+
+.gif_text_shop {
+  width: 550px;
+  padding: 10px 0px;
+  border-right: 7px solid rgb(170, 62, 152);
+  border-style:groove;
+  border-radius: 4px;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .gif_block {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .gif_all {
+    margin: 0px;
+  }
+}
+
+/*-------------------------*/
+
+.commandText{
+  background: linear-gradient(rgb(133, 55, 120), rgb(170, 62, 152));
+  box-shadow: 0px 4px 10px black;
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5) inset;
+  border-top: 10px;
+  border-bottom: 10px;
+}
+
+.textOverCommand {
+  margin-top: 100px;
+  font-size: 50px;
+  display: inline-block;
+  padding: 0 15px 30px 30px;
+  border-bottom: 2px solid white;
+}
+
+.allTextCommand {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 30px;
+  padding-bottom: 130px;
+}
+
+.textInCommand {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(237, 243, 241);
+  padding:  5px 17px;
+  border: 2px solid rgb(198, 192, 212);
+  border-bottom: 5px solid rgb(212, 192, 192);
+  border-radius: 20px;
+  margin: 10px 10px;
+}
+
+.generalFooter {
+  background: linear-gradient(180deg, rgba(12,12,12,1) 0%, rgba(16,16,16,1) 90%, rgba(40,39,40,1) 100%);
+  height: 200px;
+  font-size: 35px;
+  box-shadow: 0px -5px 5px -5px rgba(181, 87, 224, 0.6);
+  display: flex;
+  justify-content: center;
+}
+
+.footer_phone{
+  width: 1440px;
+  max-width: 1440px;
+  display: flex;
+}
+
+.footer_text {
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-bottom: 7px;
+  color: rgb(161, 144, 175);
+  font-size: 25px;
+  font-weight: 900;
+  border-bottom: 2px solid rgb(161, 144, 175)
+}
+
+.footer_discord_icon {
+  height: 30px;
+}
+
+.footer_other_links {
+  display: flex;
+  list-style: none;
+  margin-top: 7px;
+  margin-left: 30px;
+}

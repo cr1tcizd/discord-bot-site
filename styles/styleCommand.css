@@ -1,0 +1,144 @@
+@import url('../styles/style.css');
+
+.head_header {
+  position: relative;
+}
+
+body,
+a,
+div,
+h1,
+p,
+li,
+ol,
+ul,
+img,
+h2 {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+html {
+  background-color: #1c1720;
+  padding: 20px;
+}
+
+h1.title {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#description {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.main {
+  background-color: rgba(219, 69, 169, 0.8);
+  background: linear-gradient(176deg, rgba(56,18,74,1) 0%, rgba(43,40,40,1) 100%);
+  margin: 40px auto 40px auto;
+  padding: 40px;
+  max-width: 1200px;
+  border-radius: 3px;
+  box-sizing: content-box;
+}
+
+.command_search_block {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.command_search {
+  height: 35px;
+  width: 420px;
+  border: 2px solid rgb(170, 62, 152);
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Rubik" sans-serif;
+  font-weight: 900;
+  color: white;
+  background-color: rgba(161, 69, 161, 0.3);
+  padding: 0 40px;
+}
+
+.img_search {
+  position:absolute;
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+.author-command {
+  display: initial;
+  width: 100%;
+  z-index: auto;
+}
+
+.command-data {
+  background-color: rgba(161, 69, 161, 0.3);
+  width: 100%;
+  margin: 20px 0px;
+  padding: 15px 0px;
+  display: block;
+  border-radius: 2px;
+}
+
+.command-data h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.command-data p {
+  font-size: 25px;
+  text-align: left;
+}
+
+.command_general_info {
+  margin: 0px 40px;
+  padding: 10px 0px;
+  border-bottom: 1px solid rgb(170, 62, 152);
+}
+
+
+.command_option_info {
+  margin: 0px 40px;
+  padding: 10px 0px;
+}
+
+.option_info {
+  margin-bottom: 10px;
+}
+
+.option_ul_value {
+  display: flex;
+  list-style: none;
+}
+
+.option_info_value {
+  font-size: 24px;
+  padding: 5px 20px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 8px;
+  color: #54285a;
+  font-weight: 900;
+}
+
+@media (max-width: 600px) {
+
+}
+  
