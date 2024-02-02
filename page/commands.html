@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Команды</title>
+  <link rel="stylesheet" href="../styles/styleCommand.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;800&display=swap" rel="stylesheet"> 
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">   
+</head>
+<body>
+  <header class="head_header">
+    <div class="header_logo">
+      <a class="header_logoLink_a" href="" target="_self">
+        <img class="icon-img" src="../images/iconAI.png" alt="icon">
+      </a>
+      <p class="header_logo_text">billy &lt;3</p>
+    </div>
+    
+    <div class="header_wordmenu">
+
+      <nav class="navigator">
+      
+        <ul class="navList">
+
+          <li class="navList_point">
+            <a class="navList_hyperLink" href="../page/commands.html">Команды</a>
+         </li>
+
+          <li class="navList_point">
+            <a class="navList_hyperLink" href="../index.html">Описание</a>
+          </li>
+
+          <li class="navList_point">
+            <a class="navList_hyperLink" href="../page/managed.html">Управление</a>
+          </li>
+
+        </ul>
+
+        <div class="nav_menu">
+          <button class="nav_menu_button" id="btn">
+            <span class="nav_menu_button_cont">Меню</span>
+            <i class="bx bx-chevron-down" id="arrow"></i>              
+          </button>
+          <ul class="dropdown" id="dropdown">
+            <li><a class="dropdown_menu" href="../page/commands.html">Команды</a></li>
+            <li><a class="dropdown_menu" href="../index.html">Описание</a></li>
+          </ul
+        </div>
+
+      </nav>
+
+    </div>
+</header>
+  
+  <div class="main">
+    <div class="command_search_block">
+      <input class="command_search" type="text" id="commandSearch" placeholder="Поиск команды...">
+      <img class="img_search" src="../images/search.png" alt="">
+    </div>
+    
+    <div class="commands">
+      <div class="author-command">
+        <div class="command-data">
+
+          <div class="command_general_info">
+            <h1 class="title">info</h1>
+            <p id="description">Предоставляет информацию о пользователе</p>
+          </div>
+
+          <div class="command_option_info">
+            <h1 class="option_info">настройки:</h1>
+            <ul class="option_ul_value">
+              <li class="option_info_value">@user</li>
+            </ul>
+
+          </div>
+
+        </div> 
+        
+        <div class="command-data">
+
+          <div class="command_general_info">
+            <h1 class="title">casino</h1>
+            <p id="description">Крути слоты за виртуальную валюту</p>
+          </div>
+
+          <div class="command_option_info">
+            <h1 class="option_info">настройки:</h1>
+            <ul class="option_ul_value">
+              <li class="option_info_value">10</li>
+              <li class="option_info_value">50</li>
+              <li class="option_info_value">100</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="command-data">
+
+          <div class="command_general_info">
+            <h1 class="title">vsend</h1>
+            <p id="description">Перевод валюты другому пользователю</p>
+          </div>
+
+          <div class="command_option_info">
+            <h1 class="option_info">настройки:</h1>
+            <ul class="option_ul_value">
+              <li class="option_info_value">@user &laquo;count&raquo;</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="command-data">
+
+          <div class="command_general_info">
+            <h1 class="title">shop</h1>
+            <p id="description">Магазин услуг внутриигровой валюты</p>
+          </div>
+
+        </div>
+
+        <div class="command-data">
+
+          <div class="command_general_info">
+            <h1 class="title">uroll</h1>
+            <p id="description">Рандомизация пользователей</p>
+          </div>
+
+        </div>
+
+        <div class="command-data">
+
+          <div class="command_general_info">
+            <h1 class="title">coinflip</h1>
+            <p id="description">Игра решка-орел</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+    <!-- <li>!info @user: информация о пользователе</li>
+    <li>!vsend @user number: передать валюту</li>
+    <li>!shop:  магазин</li>
+    <li>!uroll: рандомайзер пользователей</li>
+    <li>!nroll: рандомайзер чисел от 1 до 100</li>
+    <li>!coinflip: орел-решка</li> --> 
+    <script src="../scripts/script.js" type=""></script>
+    <script src="../scripts/menu.js"></script>
+</body>
+</html>
